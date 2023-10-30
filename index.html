@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G4A Account</title>
+    <style>
+        body{
+            background: whitesmoke;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        *{
+            color: gray;
+            border: 0;   
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;         
+        }
+        form, span{
+            width: 28em;
+            text-align: left;
+            padding: 1.5em;
+            background: whitesmoke;
+            box-shadow: 0.5em 0.5em 0.5em lightgray, -0.5em -0.5em 0.5em #fff ;
+            border-radius: 1em;
+            font-size: large;
+            margin: 1em;
+        }
+        input{
+            border: 0;
+            background: transparent;
+            border-bottom: solid 1px gray;
+        }
+        input:is(:focus, :valid){
+            outline: none;
+        }
+        button{
+            width: 100%;
+            font-size: large;
+            color: #fff;
+            border-radius: 0.5em;
+            background: #0082ff;
+            padding: 0.5em;
+            margin-top:3em;
+        }
+        #loginform input{
+            width: 90%;
+            font-size: smaller;
+            margin: 0.3em auto;
+        }
+        h1{
+            width: 100%;
+            margin: 1px;
+        }
+        section{
+            text-align: center;
+        }
+       @media screen and (max-width: 720px){
+        form{
+            width: calc(100% - 3em);
+            margin: auto;
+        }
+        #info{
+            width: 100%;
+            margin: 1.5em auto;
+        }
+       } 
+    </style>
+</head>
+<body>
+    <h1>GCE For All</h1>
+    <section>
+        <form action="" method="post">
+            Once upon a time, a student named
+            <input type="text" id="name">
+            from a college in Cameroon called
+            <input type="text" id="college">
+            <input type="radio" name="gen" id="male">He
+            <input type="radio" name="gen" id="female">She loved studying,
+            and to make his grades better, he decided to sign into G4A.
+            He  went over to their website,  entered his credidentials such as email <input type="email" id="email"> address,
+            and password <input type="password" id="password">. <br> Then clicked on the 
+            <button id="Register">Register</button>
+        </form>
+        <h2>OR</h2>
+        <form action="" id="loginform">
+            <h2>Login to Old Account</h2>
+            <input type="text" id="lname" placeholder="Name:">
+            <input type="text" id="lemail" placeholder="Email:">
+            <input type="password" id="lpassword" placeholder="Password:">
+            <button>Login</button>
+        </form>
+    </section>
+    <span id="info">
+       
+        <h1>About GCE For All</h1>
+        GCE For All here in after refered to as G4A is a brand under TiMi
+        and is asside to bring to all secondary schoolers of Cameroon who are struglling
+        thruogh the prepapratory process of their GCE Ordinary and Advance Level Exams.
+        we put to your discretion
+        </span>
+</body>
+<script>
+    regs= document.getElementById("Register")
+    regs.onclick=()=>{
+        open("assets/sources/notice.html")
+        window.close()
+    }
+</script>
+</html>
